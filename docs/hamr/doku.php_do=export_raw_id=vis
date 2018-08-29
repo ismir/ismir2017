@@ -1,0 +1,35 @@
+====== The Visualisation Project ======
+
+| Author | Iris Yuping Ren |
+| Affiliation | Utrecht University |
+| Code | [[https://github.com/irisyupingren/HAMR2017 | github]]|
+
+I made a video to visualise the features of a song I like. Features: mfcc, chroma, and beat. 
+
+===== Feature extraction =====
+
+Feature extraction was done using the librosa package in python. Then the feature vector/matrices were exported as pickle files. 
+
+===== Animation and visualisation =====
+
+A separate script was written to load the extracted features. Then the features were mapped to a scatter plot animation:
+
+mfcc[0-2] -> colour[r, g, b]
+
+chroma -> different y values
+
+beat -> marker size
+
+===== Video =====
+
+{{example.mp4}}
+
+===== About the song =====
+
+The song is a 6-mins long piano improvisation of a friend in the .m4a format. 
+
+===== More =====
+
+Python isn't the prettiest and fastest for visualisation but it can show the essential information (and lots of MIR algorithms are in python!)
+
+Running out of battery towards the end of the hack. More automatisation needs to be done...
