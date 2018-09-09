@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>vis</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="vis"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.php" title="HAMR@ISMIR 2017 Proceedings"/>
+<link rel="start" href="index.html"/>
+<link rel="contents" href="doku.php%3Fid=vis&amp;do=index.html" title="Sitemap"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="doku.php%3Fdo=export_xhtml&amp;id=vis.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="doku.php%3Fdo=export_raw&amp;id=vis"/>
+<link rel="canonical" href="doku.php%3Fid=vis.html"/>
+<link rel="stylesheet" type="text/css" href="lib/exe/css.php%3Ft=dokuwiki&amp;tseed=a0a5c75b866f317a080bb951976d835c.css"/>
+<!--[if gte IE 9]><!-->
+<script type="text/javascript">/*<![CDATA[*/var NS='';var JSINFO = {"id":"vis","namespace":""};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/jquery.php%3Ftseed=23f888679b4f1dc26eef34902aca964f"></script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php%3Ft=dokuwiki&amp;tseed=a0a5c75b866f317a080bb951976d835c"></script>
+<script type="text/x-mathjax-config">/*<![CDATA[*/MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+        processEscapes: true
+    }
+});
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML.js"></script>
+<!--<![endif]-->
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div id="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="doku.php%3Fdo=export_xhtml&amp;id=vis.html#the_visualisation_project">The Visualisation Project</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="doku.php%3Fdo=export_xhtml&amp;id=vis.html#feature_extraction">Feature extraction</a></div></li>
+<li class="level2"><div class="li"><a href="doku.php%3Fdo=export_xhtml&amp;id=vis.html#animation_and_visualisation">Animation and visualisation</a></div></li>
+<li class="level2"><div class="li"><a href="doku.php%3Fdo=export_xhtml&amp;id=vis.html#video">Video</a></div></li>
+<li class="level2"><div class="li"><a href="doku.php%3Fdo=export_xhtml&amp;id=vis.html#about_the_song">About the song</a></div></li>
+<li class="level2"><div class="li"><a href="doku.php%3Fdo=export_xhtml&amp;id=vis.html#more">More</a></div></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="the_visualisation_project">The Visualisation Project</h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> Author </td><td class="col1"> Iris Yuping Ren </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Affiliation </td><td class="col1"> Utrecht University </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Code </td><td class="col1"> <a href="https://github.com/irisyupingren/HAMR2017" class="urlextern" title="https://github.com/irisyupingren/HAMR2017" rel="nofollow"> github</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [42-172] -->
+<p>
+I made a video to visualise the features of a song I like. Features: mfcc, chroma, and beat. 
+</p>
+
+</div>
+<!-- EDIT1 SECTION "The Visualisation Project" [1-268] -->
+<h2 class="sectionedit3" id="feature_extraction">Feature extraction</h2>
+<div class="level2">
+
+<p>
+Feature extraction was done using the librosa package in python. Then the feature vector/matrices were exported as pickle files. 
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Feature extraction" [269-431] -->
+<h2 class="sectionedit4" id="animation_and_visualisation">Animation and visualisation</h2>
+<div class="level2">
+
+<p>
+A separate script was written to load the extracted features. Then the features were mapped to a scatter plot animation:
+</p>
+
+<p>
+mfcc[0-2] → colour[r, g, b]
+</p>
+
+<p>
+chroma → different y values
+</p>
+
+<p>
+beat → marker size
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Animation and visualisation" [432-675] -->
+<h2 class="sectionedit5" id="video">Video</h2>
+<div class="level2">
+
+<p>
+<video class="media" width="320" height="240" controls="controls">
+<source src="lib/exe/fetch.php%3Fmedia=example.mp4" type="video/mp4" />
+<a href="lib/exe/fetch.php%3Fcache=&amp;media=example.mp4" class="media mediafile mf_mp4" title="example.mp4 (6.3 MB)">example.mp4</a></video>
+
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Video" [676-711] -->
+<h2 class="sectionedit6" id="about_the_song">About the song</h2>
+<div class="level2">
+
+<p>
+The song is a 6-mins long piano improvisation of a friend in the .m4a format. 
+</p>
+
+</div>
+<!-- EDIT6 SECTION "About the song" [712-819] -->
+<h2 class="sectionedit7" id="more">More</h2>
+<div class="level2">
+
+<p>
+Python isn&#039;t the prettiest and fastest for visualisation but it can show the essential information (and lots of MIR algorithms are in python!)
+</p>
+
+<p>
+Running out of battery towards the end of the hack. More automatisation needs to be done…
+</p>
+
+</div>
+<!-- EDIT7 SECTION "More" [820-] --></div>
+</body>
+</html>
