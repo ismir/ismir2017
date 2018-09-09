@@ -1,0 +1,30 @@
+====== HAMR-Orchestra ======
+
+| Authors | Frank Zalkow <frank.zalkow@audiolabs-erlangen.de>,\\ Christof Weiß <christof.weiss@audiolabs-erlangen.de> |
+| Affiliation | International Audio Laboratories Erlangen |
+| Code | [[https://github.com/fzalkow/hamr-orchestra|Github]] [[https://www.audiolabs-erlangen.de/resources/MIR/TSMtoolbox/|TSM toolbox]] |
+
+A HAMR-Orchestra is an orchestral sound having the attack sound of a piano (German: HAMMERklavier).
+
+{{ :hamr_orchestra_teaser.png?nolink&600 |}}
+
+===== Method =====
+
+  * Needed: Recordings of orchestral and piano version of same composition.
+  * Use music synchronization to get an alignment between both recordings((Meinard Müller: //Fundamentals of Music Processing – Audio, Analysis, Algorithms, Applications//, Springer Verlag 2015.)).
+  * Use non-linear time stretching to stretch one recording to be synchronous with the other one((Jonathan Driedger and Meinard Müller: //A Review on Time-Scale Modification of Music Signals//, Applied Sciences, 6(2): 57–82, 2016.)).
+  * Use Harmonic-Percussive-Residual Separation to separate both in recordings into three components each((Jonathan Driedger, Meinard Müller and Sascha Disch: // Extending Harmonic-Percussive Separation of Audio Signals//, Proceedings of the International Conference on Music Information Retrieval (ISMIR): 611–616, 2014.)).
+  * Mix the harmonic component of the orchestral version and the percussive component of the piano recoding. Ignore the residual components, since they contain mainly artifacts. Possibly, applying a bit of compression can improve the balance between the two parts.
+  * You got your HAMR-Orchestra!
+
+{{ :hamr_orchestra_flowdiagram.png?nolink&600 |}}
+
+===== Example – Ludwig van Beethoven: Symphony No. 5 in C minor Op. 67 =====
+
+| Original piano version | {{beethoven_op67-01_klavier.mp3}} | Lambis Vassiliadis (piano), Public Domain [[https://musopen.org/music/2128/ludwig-van-beethoven/symphony-no-5-f-liszt-piano-transcription/|Musopen]]) |
+| Original orchestral version | {{beethoven_op67-01_orchester.mp3}} | Simon Schindler (conductor), Fulda Symphonic Orchestra, CC BY-SA 3.0 [[http://imslp.org/wiki/Symphony_No.5,_Op.67_(Beethoven,_Ludwig_van)|IMSLP]])  |
+| Time-stretched piano version | {{beethoven_op67-01_klavier-streched.mp3}} | CC BY-SA 4.0 |
+| Harmonic component of orchestral version | {{beethoven_op67-01_orchester_h.mp3}} | CC BY-SA 4.0 |
+| Percussive component of time-stretched piano | {{beethoven_op67-01_klavier-streched_p.mp3}} | CC BY-SA 4.0 |
+| HAMR-Orchestra | {{beethoven_op67-01_klavier-streched_--_beethoven_op67-01_orchester.mp3}} | CC BY-SA 4.0 |
+
